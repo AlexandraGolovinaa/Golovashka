@@ -1,0 +1,7 @@
+week_days = ("Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье")
+
+weekend_days = int(input("Сколько выходных дней на неделе вы хотите? "))
+work_days = len(week_days) - weekend_days
+
+print("Ваши выходные дни:", ", ".join(week_days[-weekend_days:]))
+print("Ваши рабочие дни:", ", ".join(week_days[:work_days]))
